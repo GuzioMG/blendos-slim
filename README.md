@@ -1,5 +1,10 @@
-# blendOS Tracks
+# my personal blendOS Tracks
+These are slightly modified and restructed base BlendOS tracks the way I think is better
+## WARNING
+These are experimental and might randomly be broken! If such thing occurs, please contact me on discord at `ico278`
 
+* lightweight TTY: `blendos-desktop`
+* custom desktop: `blendos-desktop`
 * GNOME: `gnome`
 * Plasma: `plasma`
 * Cinnamon: `cinnamon`
@@ -12,28 +17,26 @@
 ```
 repo: 'https://pkg-repo.blendos.co/'
 
-impl: 'https://github.com/blend-os/tracks/raw/main'
+impl: 'https://github.com/ico277/blendos-tracks/raw/main'
 
 track: 'gnome'
 ```
-
-## Example GNOME `/system.yaml` with Caddy
-
+## Lightweight example (roughly my personal hyprland setup, also untested and just an example)
 ```
 repo: 'https://pkg-repo.blendos.co/'
 
-impl: 'https://github.com/blend-os/tracks/raw/main'
+impl: 'https://github.com/ico277/blendos-tracks/raw/main'
 
-track: 'gnome'
+track: 'blendos-desktop'
 
 packages:
-    - 'micro'
-    - 'caddy'
-
-services:
-    - 'caddy'
-
-package-repos:
-    - name: 'chaotic-aur'
-      repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
-```
+    - 'hyprland'
+    - 'bemenu'
+    - 'waybar'
+    - 'playerctl'
+    - 'brightnessctl'
+    - 'kitty'
+    - 'grim'
+    - 'slurp'
+    - 'wl-clipboard'
+    - 'ttf-cascadia-code'
