@@ -1,15 +1,13 @@
 impl: 'https://github.com/blend-os/tracks/raw/main'
 
-track: 'blendos-base'
+track: 'blendos-desktop'
 
 packages:
-  - 'kde-system-meta'
-  - 'kde-utilities-meta'
-  - 'plasma'
-  - 'plasma-workspace'
+  - 'plasma-desktop'
+  - 'dolphin'
+  - 'konsole'
   - 'sddm'
-  - 'waydroid'
-  - 'waydroid-image'
+  - 'xdg-desktop-portal-kde'
 
 services:
   - 'sddm'

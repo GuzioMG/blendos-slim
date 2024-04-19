@@ -1,0 +1,25 @@
+impl: 'https://github.com/ico277/blendos-tracks/raw/main'
+
+track: 'blendos-base'
+
+packages:
+  - 'xorg'
+  - 'vulkan-intel'
+  - 'vulkan-radeon'
+  - 'libva-mesa-driver'
+  - 'libva-intel-driver'
+  - 'intel-media-driver'
+  - 'xf86-video-amdgpu'
+  - 'xf86-video-ati'
+  - 'xf86-video-intel'
+  - 'pipewire'
+  - 'pipewire-pulse'
+  - 'pipewire-alsa'
+  - 'pipewire-jack'
+  - 'wireplumber'
+  - 'blend'
+  - 'blend-settings'
+
+user-services:
+  - 'pipewire'
+  - 'wireplumber'

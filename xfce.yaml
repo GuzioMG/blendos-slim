@@ -1,6 +1,6 @@
 impl: 'https://github.com/blend-os/tracks/raw/main'
 
-track: 'blendos-base'
+track: 'blendos-desktop'
 
 packages:
   - 'xfce4'
