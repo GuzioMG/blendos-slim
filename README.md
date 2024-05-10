@@ -33,7 +33,7 @@ impl: 'https://github.com/ico277/blendos-tracks/raw/main'
 track: 'guzio'
 ```
 ### Modifying a track:
-In the following example, I added `firefox` to the `cinnamon` track (as recommended above). I also enabled the `chaotic-aur` repo (obviously, enabling any other repo is not necessary - but this is just an example, after all).
+In the following example, I added `firefox` to the `cinnamon` track (as recommended above).
 ```
  repo: 'https://pkg-repo.blendos.co/'
 
@@ -43,18 +43,16 @@ In the following example, I added `firefox` to the `cinnamon` track (as recommen
 
  packages: 
      - 'firefox'
-
-package-repos:
-    - name: 'chaotic-aur'
-      repo-url: 'https://cdn-mirror.chaotic.cx/$repo/$arch'
 ```
 ### Hungry for more?
-Check out [Ast3risk's guide](https://asterisk.lol/blog/blend_v4/) or [the official blog post](idk) for some more `/system.yaml` examples and its documentation.
+Check out [Ast3risk's guide](https://asterisk.lol/blog/blend_v4/) or [the official blog post](idk) for some more `/system.yaml` examples and its documentation (such as how to add more repos, run comands on build-time or enable services).
 
 ## License
-You might've noticed something strange: I forked a GPL3-licensed repo, but now it's suddenly MIT-licensed. Why? Well, GPL just kinda... Doesn't make sense for this use case, to be honest. *(Also, I kinda despise the whole „FOSS or die” mentality (being more pragmatic, I care more about Open Source Software - FOSS's practical implications without any ideological nonsense attached to it) and the FSF, but that's beside the point here).*
+You might've noticed something strange: I forked a GPL3-licensed repo, but now it's suddenly MIT-licensed. Why? Well, GPL just kinda... Doesn't make sense for this use case, to be honest. *(Also, I kinda despise the whole „FOSS or die” mentality (being more pragmatic, I care more about Open Source Software - FOSS's practical implications without any ideological nonsense attached to it) and the FSF, but I digress).*
 
-The core assumption of GPL is that ANY modification done to the codebase must be contributed back to the community (not necessarily merge them into the base repo, but at the very least publish your own fork). What does it mean in practice? Well, imagine you want to modify one of the tracks in this repo. You point your local `/system.yaml` to it, add whatever packages you need, and carry on. Great! But... Did you contribute the changes back to the community? You didn't! The only place they're stored is inside the `/system.yaml` on your machine. Thankfully, this is not a problem. Proprietary software can depend on FOSS, as long they're not bundled together and one only references the other - which is the case here („point your local `/system.yaml` to it”). But what if you want to *remove* a package instead? Well, since the tracks system only allows layering new packages on top without removing existing ones - the only way to do it is to copy-paste whatever track you wanted to modify into your `/system.yaml` and remove the package from there. And... Uh-oh, we have a problem! You just copied GPL-licensed material and modified it! Unless you now contribute it back, you're breaking the law! Obviously, no one would sue you for removing a package (I don't know who ico277 is IRL, but I doubt they have the resources for a lawsuit over such a stupid thing. It's kind of like *unethically obtaining* media (games, movies, whatever) from studios that went bankrupt - technically it's still illegal, but no one can afford to enforce it anymore.), but such a possibility even existing sounds unbelievably stupid, nevertheless.
+The core assumption of GPL is that ANY modification done to the codebase must be contributed back to the community (not necessarily merge them into the base repo, but at the very least publish your own fork).
+
+What does it mean in practice? Well, imagine you want to modify one of the tracks in this repo. You point your local `/system.yaml` to it, add whatever packages you need, and carry on. Great! But... Did you contribute the changes back to the community? You didn't! The only place they're stored is inside the `/system.yaml` on your machine. Thankfully, this is not a problem. Proprietary software can depend on FOSS, as long they're not bundled together and one only references the other - which is the case here („point your local `/system.yaml` to it”). But what if you want to *remove* a package instead? Well, since the tracks system only allows layering new packages on top without removing existing ones - the only way to do it is to copy-paste whatever track you wanted to modify into your `/system.yaml` and remove the package from there. And... Uh-oh, we have a problem! You just copied GPL-licensed material and modified it! Unless you now contribute it back, you're breaking the law! Obviously, no one would sue you for removing a package (I don't know who ico277 is IRL, but I doubt they have the resources for a lawsuit over such a stupid thing. It's kind of like *unethically obtaining* media (games, movies, whatever) from studios that went bankrupt - technically it's still illegal, but no one can afford to enforce it anymore.), but such a possibility even existing sounds unbelievably stupid, nevertheless.
 
 As such - I re-licensed this repo under MIT. How is this ever legal? Well, as I said earlier - „Proprietary \[or anything non-GPL] software can depend on FOSS \[ie. GPL, in this case], as long they're not bundled together and one only references the other”. So, the only MIT-licensed files in this repo are those created from scratch (they only reference GPL ones). These are:
 * the README (with the exception of code snippets in Usage Examples - first one being derived from ico277's GPL-licensed README (this technically means that I'm embedding GPL code into MIT code, which might not be legal - except Markdown files are considered text works, not code, and as such aren't covered by the GPL. I think so, at least), and the other one from [Ast3risk's blog post](https://asterisk.lol/blog/blend_v4/), whatever license they use)
