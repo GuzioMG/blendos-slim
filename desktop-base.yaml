@@ -3,7 +3,9 @@ impl: 'https://github.com/ico277/blendos-tracks/raw/main'
 track: 'blendos-base'
 
 packages:
-  - 'xorg'
+  - 'alsa-utils'
+  - 'bluez'
+  - 'cups'
   - 'vulkan-intel'
   - 'vulkan-radeon'
   - 'libva-mesa-driver'
@@ -19,6 +21,10 @@ packages:
   - 'wireplumber'
   - 'blend'
   - 'blend-settings'
+
+services:
+  - 'bluetooth'
+  - 'cups'
 
 user-services:
   - 'pipewire'
