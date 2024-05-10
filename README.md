@@ -10,7 +10,7 @@ These are experimental and may be broken in some weird ways! In their version, `
 
 ## Available tracks:
 * Lightweight TTY: `core`
-* Lightweight TTY without WiFi support: `server-edition`
+* Lightweight TTY without WiFi support: `server-base` (as the name implies, it's just the base of a complete server track - if you want to deploy it on a server and have it do anything useful there, you'll need a lot more packages, eg. Docker or nginx)
 * Pre-made base for a custom desktop: `desktop-base` (`desktop-base-x11` for a version with X.Org pre-installed; `desktop-base-waydroid` for a version with Waydroid pre-installed)
 * GNOME: `gnome` (`gnome-x11` for an X.Org version; `gnome-waydroid` for a version with Waydroid pre-installed)
 * KDE Plasma: `kde` (`kde-x11` for an X.Org version; `kde-waydroid` for a version with Waydroid pre-installed)
