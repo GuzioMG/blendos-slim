@@ -1,0 +1,17 @@
+impl: 'https://github.com/GuzioMG/blendos-slim/raw/master'
+
+track: 'server-base'
+
+packages:
+  - 'alsa-utils'
+  - 'bluez'
+  - 'cups'
+  - 'networkmanager'
+  - 'wireless-regdb'
+  - 'wireless_tools'
+  - 'wpa_supplicant'
+
+services:
+  - 'bluetooth'
+  - 'cups'
+  - 'NetworkManager'

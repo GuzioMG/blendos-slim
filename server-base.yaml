@@ -1,7 +1,6 @@
 track: 'custom'
 
 packages:
-  - 'alsa-utils'
   - 'amd-ucode'
   - 'arch-install-scripts'
   - 'archlinux-keyring'
@@ -61,18 +60,7 @@ packages:
   - 'sudo'
   - 'usb_modeswitch'
   - 'usbutils'
-  - 'wireless-regdb'
-  - 'wireless_tools'
-  - 'wpa_supplicant'
-  - 'bluez'
-  - 'networkmanager'
-  - 'cups'
   - 'ttf-jetbrains-mono'
-
-services:
-  - 'cups'
-  - 'bluetooth'
-  - 'NetworkManager'
 
 user-services:
   - 'blend-files'
