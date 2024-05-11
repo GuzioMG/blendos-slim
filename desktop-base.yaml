@@ -1,6 +1,6 @@
-impl: 'https://github.com/ico277/blendos-tracks/raw/main'
+impl: 'https://github.com/GuzioMG/blendos-slim/raw/master'
 
-track: 'blendos-base'
+track: 'core'
 
 packages:
   - 'alsa-utils'
