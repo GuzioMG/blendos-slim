@@ -1,10 +1,6 @@
 impl: 'https://github.com/GuzioMG/blendos-slim/raw/master'
 
-track: 'desktop-base-x11'
+track: 'desktop-base'
 
 packages:
-  - 'lxqt'
-  - 'sddm'
-
-services:
-  - 'sddm'
+  - 'xorg'

@@ -1,6 +1,6 @@
-impl: 'https://github.com/ico277/blendos-tracks/raw/main'
+impl: 'https://github.com/GuzioMG/blendos-slim/raw/master'
 
-track: 'blendos-desktop'
+track: 'desktop-base-x11'
 
 packages:
   - 'mate'
